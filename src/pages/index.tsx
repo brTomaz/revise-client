@@ -1,4 +1,4 @@
-import { MouseEvent, useEffect, useState } from 'react'
+import { MouseEvent, useState } from 'react'
 import { GetStaticProps } from 'next'
 
 import Main from 'templates/Main'
@@ -23,10 +23,6 @@ export default function Home({ questions }: HomeProps) {
   )
   const [points, setPoints] = useState(initialPointsState)
   const [mapTries, setMapTries] = useState(initialMapTriesState)
-
-  useEffect(() => {
-    // console.log(currentQuestion)
-  }, [currentQuestion])
 
   let tries = 0
 
