@@ -1,4 +1,6 @@
-# Revise
+![Revise](public/img/logo.svg)
+
+---
 
 ## What is inside?
 
