@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Question /> should render with statement and answers 1`] = `
+.c5 {
+  cursor: pointer;
+  list-style: none;
+  background: #030517;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #FAFAFA;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1.6rem 1.6rem;
+  font-size: 1.8rem;
+}
+
+.c5:hover {
+  color: #2DC2C3;
+}
+
+.c3 {
+  color: #3A3A3A;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.6rem;
+}
+
+.c0 {
+  -webkit-animation: iOciKd 0.6s ease;
+  animation: iOciKd 0.6s ease;
+}
+
+.c1 {
+  background-color: #FAFAFA;
+  color: #3A3A3A;
+  border-radius: 2.6rem 2.6rem 2.6rem 0;
+  padding: 2.4rem 2.4rem;
+  margin-bottom: 4.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.c1 img {
+  max-width: 100%;
+}
+
+.c2 {
+  background-color: #FAFAFA;
+  padding: 0.4rem;
+  border-radius: 2.6rem;
+}
+
+.c2 .c4 {
+  margin-bottom: 0.4rem;
+}
+
+.c2 .c4:last-child {
+  border-radius: 0 0 2.4rem 2.4rem;
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    font-size: 2.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 2.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    box-shadow: 0 0 0.4rem 0.5rem 0 rgba(0,0,0,0.2);
+    padding: 0 5.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding: 2.4rem 4.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 p {
+    font-size: 2.0rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div>
+        <figure
+          class="image"
+        >
+          <img
+            alt=""
+            src="/uploads/question_1_bca75dd891.png"
+          />
+        </figure>
+      </div>
+    </div>
+    <div
+      class="c2"
+    >
+      <h2
+        class="c3"
+      >
+        No cartum, a crítica está no fato de a sociedade exigir do adolescente que 
+      </h2>
+      <ul>
+        <li
+          class="c4 c5"
+        >
+          se aposente prematuramente.
+        </li>
+        <li
+          class="c4 c5"
+        >
+          amadureça prematuramente.
+        </li>
+        <li
+          class="c4 c5"
+        >
+          estude aplicadamente.
+        </li>
+        <li
+          class="c4 c5"
+        >
+          se forme rapidamente.
+        </li>
+        <li
+          class="c4 c5"
+        >
+          ouça atentamente.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Answer /> should render the Answer with styles 1`] = `
+.c0 {
+  cursor: pointer;
+  list-style: none;
+  background: #030517;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #FAFAFA;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1.6rem 1.6rem;
+  font-size: 1.8rem;
+}
+
+.c0:hover {
+  color: #2DC2C3;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 2.0rem;
+  }
+}
+
+<li
+  class="c0"
+>
+  any_answer
+</li>
+`

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderCounter /> should render the HeaderCounter with styles 1`] = `
+.c0 {
+  text-align: center;
+}
+
+.c1 {
+  font-size: 2.0rem;
+  font-weight: 400;
+}
+
+.c2 {
+  font-size: 4.0rem;
+  font-weight: 100;
+}
+
+.c3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 4.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1.8rem;
+  }
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <h2
+      class="c1"
+    >
+      Pontuação
+    </h2>
+    <div
+      class="c2"
+    >
+      60
+    </div>
+    <div
+      class="c3"
+    >
+      pontos
+    </div>
+  </section>
+</div>
+`
