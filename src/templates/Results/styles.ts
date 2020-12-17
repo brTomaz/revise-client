@@ -8,8 +8,6 @@ export const Wrapper = styled.div`
     ${media.lessThan('medium')`
       padding: ${theme.spacings.small};
     `}
-    background-color: ${theme.colors.black};
-    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
   `}
 `
 

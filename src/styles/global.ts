@@ -16,6 +16,8 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #__next {
     height: 100%;
+    background-color: ${theme.colors.black};
+    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
   }
 
   body {

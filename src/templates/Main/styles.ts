@@ -27,9 +27,6 @@ export const Wrapper = styled.div`
       padding: ${theme.spacings.small};
     `}
 
-    background-color: ${theme.colors.black};
-    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
-
     .wrong {
       color: ${theme.colors.error};
       animation: ${shake} 0.5s cubic-bezier(0.35, 0.05, 0.2, 0.99) both;
