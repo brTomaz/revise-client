@@ -16,6 +16,12 @@ This project uses lot of stuff as:
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 
+## Links
+
+- [Application](https://revise.vercel.app)
+- [Application administrator](https://revise-app-api.herokuapp.com)
+- [Design System](https://brtomaz.github.io/revise-client/)
+
 ## Getting Started
 
 First, run the development server:
