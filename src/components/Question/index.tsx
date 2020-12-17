@@ -1,4 +1,4 @@
-import { MouseEvent } from 'react'
+import { MouseEvent, useEffect } from 'react'
 
 import Answer from 'components/Answer'
 import Statement from 'components/Statement'
@@ -17,6 +17,10 @@ const Question = ({
   correctAnswer,
   handleClick
 }: QuestionProps) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
   return (
     <Styles.Wrapper>
       <Styles.InfoWrapper>
