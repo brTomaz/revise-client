@@ -5,6 +5,7 @@ export const BaseToast = (theme: DefaultTheme) => css`
   background-color: ${theme.colors.primary};
   border-radius: 0.5rem;
   color: ${theme.colors.white};
+  padding-bottom: ${theme.spacings.small};
 
   div {
     display: flex;
