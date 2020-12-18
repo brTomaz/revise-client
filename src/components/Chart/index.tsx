@@ -21,7 +21,7 @@ const options = {
       {
         ticks: {
           beginAtZero: true,
-          stepSize: 1
+          stepSize: 2
         }
       }
     ]

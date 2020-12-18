@@ -24,7 +24,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     flex-direction: row;
   `}
 `
@@ -34,7 +34,7 @@ export const Title = styled.h1`
     font-size: ${theme.font.sizes.huge};
     color: ${theme.colors.darkSecondary};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       font-size: ${theme.font.sizes.xxhuge};
     `}
   `}
@@ -48,19 +48,23 @@ export const ChartWrapper = styled.div`
     justify-content: space-between;
 
     width: 100%;
-    height: 30rem;
+    height: 32rem;
 
     margin-bottom: ${theme.spacings.small};
+    background: ${theme.colors.white};
+    padding: ${theme.spacings.small} ${theme.spacings.xxsmall};
+    border-radius: 5px;
 
     ${media.greaterThan('medium')`
-      width: 50rem;
-      height: 40rem;
+      height: 48rem;
+      padding: ${theme.spacings.small} ${theme.spacings.medium};
     `}
 
-    background: ${theme.colors.white};
-
-    padding: ${theme.spacings.small} ${theme.spacings.xlarge};
-    border-radius: 5px;
+    ${media.greaterThan('large')`
+      width: 50rem;
+      height: 40rem;
+      margin-bottom: 0;
+    `}
   `}
 `
 export const InfoWrapper = styled.div`
@@ -74,15 +78,9 @@ export const InfoWrapper = styled.div`
       ${theme.spacings.medium};
 
     width: 100%;
-    height: 30rem;
+    height: 32rem;
 
     font-size: ${theme.font.sizes.xlarge};
-
-    ${media.greaterThan('medium')`
-      width: 50rem;
-      height: 40rem;
-      font-size: ${theme.font.sizes.xhuge};
-    `}
 
     background: ${theme.colors.white};
     border-radius: 5px;
@@ -92,6 +90,17 @@ export const InfoWrapper = styled.div`
       display: block;
       margin: 10px 0;
     }
+
+    ${media.greaterThan('medium')`
+      height: 48rem;
+      padding: ${theme.spacings.small} ${theme.spacings.medium};
+    `}
+
+    ${media.greaterThan('large')`
+      width: 50rem;
+      height: 40rem;
+      font-size: ${theme.font.sizes.xhuge};
+    `}
   `}
 `
 
@@ -123,9 +132,11 @@ export const Button = styled.a`
 
     transition: all, 0.3s ease-in;
 
-    &:hover {
+    &:hover,
+    &:visited {
       background-size: 100% 100%;
       color: ${theme.colors.white};
+      -webkit-tap-highlight-color: transparent;
     }
   `}
 `
