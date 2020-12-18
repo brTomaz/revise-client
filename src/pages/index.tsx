@@ -15,7 +15,7 @@ type HomeProps = {
 
 const initialCurrentQuestionState = 0
 const initialPointsState = 0
-const initialMapTriesState = [5, 7, 3, 3, 2]
+const initialMapTriesState = [0, 0, 0, 0, 0]
 
 export default function Home({ questions }: HomeProps) {
   const [currentQuestion, setCurrentQuestion] = useState(
@@ -69,9 +69,11 @@ export default function Home({ questions }: HomeProps) {
     setMapTries(initialMapTriesState)
   }
 
+  const hasNextQuestion = currentQuestion !== questions.length
+
   return (
     <>
-      {currentQuestion === questions.length ? (
+      {hasNextQuestion ? (
         <Main
           currentPoints={points}
           numberOfCurrentQuestion={currentQuestion + 1}
