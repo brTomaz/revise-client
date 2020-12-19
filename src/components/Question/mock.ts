@@ -2,16 +2,16 @@
 export const mockQuestion = {
   id: 1,
   info:
-    '<figure class="image"><img src="/uploads/question_1_bca75dd891.png" alt=""></figure>',
+    '<figure class="image"><img src="https://res.cloudinary.com/dg64nrwjl/image/upload/v1608203495/question_4_c08561bb4d.png" alt=""></figure>',
   statement:
-    'No cartum, a crítica está no fato de a sociedade exigir do adolescente que ',
+    'Ao abordar o assunto “obesidade”, em uma seção de jornal, o autor',
   answers: [
-    'se aposente prematuramente.',
-    'amadureça prematuramente.',
-    'estude aplicadamente.',
-    'se forme rapidamente.',
-    'ouça atentamente.'
+    'defende o consumo liberado de açúcar.',
+    'aponta a gordura como o grande vilão da saúde.',
+    'demonstra acreditar que a obesidade não é preocupante.',
+    'indica a necessidade de mais pesquisas sobre o assunto.',
+    'enfatiza a redução de ingestão de calorias pelos americanos.'
   ],
-  correctAnswer: 2,
+  correctAnswer: 4,
   handleClick: () => {}
 }
