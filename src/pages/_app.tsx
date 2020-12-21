@@ -15,8 +15,14 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
-          content="An application to review concepts about entrance exams in Brazilian universities"
+          content="
+          Aplicativo para revisão de conceitos e questões de vestibulares em universidades brasileiras, especialmente o Exame Nacional do Ensino Médio."
         />
+        <meta
+          name="keywords"
+          content="Revise, Estudos, ENEM, Vestibular, Ensino Médio, Preparação, App de Questões"
+        />
+        <meta name="robots" content="index, follow"></meta>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
