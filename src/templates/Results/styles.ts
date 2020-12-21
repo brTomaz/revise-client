@@ -133,7 +133,7 @@ export const Button = styled.a`
     transition: all, 0.3s ease-in;
 
     &:hover,
-    &:visited {
+    &:active {
       background-size: 100% 100%;
       color: ${theme.colors.white};
       -webkit-tap-highlight-color: transparent;

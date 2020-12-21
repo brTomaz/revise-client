@@ -69,7 +69,7 @@ export default function Home({ questions }: HomeProps) {
     setMapTries(initialMapTriesState)
   }
 
-  const hasNextQuestion = currentQuestion !== questions.length
+  const hasNextQuestion = currentQuestion === questions.length
 
   return (
     <>
