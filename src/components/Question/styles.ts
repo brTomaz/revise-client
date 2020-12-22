@@ -61,7 +61,7 @@ export const InfoWrapper = styled.div`
   `}
 `
 
-export const StatementAnswerWrapper = styled.div`
+export const AnswersAndStatementWrapper = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
     padding: 0.4rem;
