@@ -3,12 +3,7 @@ import Logo from '.'
 
 export default {
   title: 'Logo',
-  component: Logo,
-  parameters: {
-    backgrounds: {
-      default: 'dark'
-    }
-  }
+  component: Logo
 } as Meta
 
 export const Default: Story = () => <Logo />

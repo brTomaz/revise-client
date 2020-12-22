@@ -5,12 +5,7 @@ import { mockQuestion } from './mock'
 
 export default {
   title: 'Question',
-  component: Question,
-  parameters: {
-    backgrounds: {
-      default: 'dark'
-    }
-  }
+  component: Question
 } as Meta
 
 export const Default: Story<QuestionProps> = (args) => <Question {...args} />
