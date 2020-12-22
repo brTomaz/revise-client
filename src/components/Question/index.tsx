@@ -26,7 +26,7 @@ const Question = ({
       <Styles.InfoWrapper>
         <div dangerouslySetInnerHTML={{ __html: info }} />
       </Styles.InfoWrapper>
-      <Styles.StatementAnswerWrapper>
+      <Styles.AnswersAndStatementWrapper>
         <Statement>{statement}</Statement>
         <ul>
           {answers?.map((answer, index) => {
@@ -41,7 +41,7 @@ const Question = ({
             )
           })}
         </ul>
-      </Styles.StatementAnswerWrapper>
+      </Styles.AnswersAndStatementWrapper>
     </Styles.Wrapper>
   )
 }

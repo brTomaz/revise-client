@@ -3,8 +3,13 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Statement, { StatementProps } from '.'
 
 export default {
-  title: 'Enunciate',
+  title: 'Statement',
   component: Statement,
+  parameters: {
+    backgrounds: {
+      default: 'light'
+    }
+  },
   argTypes: {
     children: {
       type: 'string'
