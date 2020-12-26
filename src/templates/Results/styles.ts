@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
+import theme from 'styles/theme'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -104,6 +105,12 @@ export const InfoWrapper = styled.div`
   `}
 `
 
+const buttonHover = css`
+  background-size: 100% 100%;
+  color: ${theme.colors.white};
+  -webkit-tap-highlight-color: transparent;
+`
+
 export const Button = styled.a`
   ${({ theme }) => css`
     display: flex;
@@ -132,11 +139,13 @@ export const Button = styled.a`
 
     transition: all, 0.3s ease-in;
 
-    &:hover,
+    &:hover {
+      ${buttonHover};
+    }
+
     &:active {
-      background-size: 100% 100%;
-      color: ${theme.colors.white};
-      -webkit-tap-highlight-color: transparent;
+      transition: none;
+      ${buttonHover};
     }
   `}
 `
