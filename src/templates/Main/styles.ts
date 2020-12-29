@@ -58,3 +58,9 @@ export const Header = styled.div`
     background-color: ${theme.colors.black};
   `}
 `
+export const LoaderWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+`
