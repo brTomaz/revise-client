@@ -17,12 +17,12 @@ describe('<HeaderCounter />', () => {
 
     expect(topText).toHaveStyle({
       'font-size': theme.font.sizes.xlarge,
-      'font-weight': 400
+      'font-weight': theme.font.normal
     })
 
     expect(mainInfo).toHaveStyle({
       'font-size': theme.font.sizes.xhuge,
-      'font-weight': 100
+      'font-weight': theme.font.light
     })
 
     expect(mainInfo).toHaveStyleRule('font-size', theme.font.sizes.xxhuge, {
@@ -31,7 +31,7 @@ describe('<HeaderCounter />', () => {
 
     expect(bottomText).toHaveStyle({
       'font-size': theme.font.sizes.medium,
-      'font-weight': 300
+      'font-weight': theme.font.normal
     })
 
     expect(bottomText).toHaveStyleRule('font-size', theme.font.sizes.large, {
