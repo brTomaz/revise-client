@@ -1,6 +1,8 @@
 import styled, { css, keyframes } from 'styled-components'
 import media from 'styled-media-query'
 
+import theme from 'styles/theme'
+
 const shake = keyframes`
   10%, 90% {
     transform: translateX(-1px);
@@ -20,13 +22,10 @@ const shake = keyframes`
 `
 
 export const Wrapper = styled.div`
+  z-index: ${theme.layers.modal};
   ${({ theme }) => css`
     min-height: 100vh;
-    padding: ${theme.spacings.xlarge} ${theme.spacings.xxhuge};
-    ${media.lessThan('medium')`
-      padding: ${theme.spacings.small};
-    `}
-
+    padding: 0 ${theme.spacings.small} ${theme.spacings.small};
     .wrong {
       color: ${theme.colors.error};
       animation: ${shake} 0.5s cubic-bezier(0.35, 0.05, 0.2, 0.99) both;
@@ -35,6 +34,12 @@ export const Wrapper = styled.div`
     .correct {
       color: ${theme.colors.secondary};
     }
+
+    ${media.greaterThan('medium')`
+      padding-left: ${theme.spacings.xxhuge};
+      padding-right:  ${theme.spacings.xxhuge};
+      padding-bottom: ${theme.spacings.xlarge};
+    `}
   `}
 `
 export const Header = styled.div`
@@ -42,7 +47,14 @@ export const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: ${theme.spacings.xxlarge};
+    padding: ${theme.spacings.small};
+
+    ${media.greaterThan('medium')`
+      padding-left: ${theme.spacings.xxhuge};
+      padding-right: ${theme.spacings.xxhuge};
+    `}
+
     color: ${theme.colors.white};
+    background-color: ${theme.colors.black};
   `}
 `
