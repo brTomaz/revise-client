@@ -4,7 +4,7 @@ exports[`<Answer /> should render the Answer with styles 1`] = `
 .c0 {
   cursor: pointer;
   list-style: none;
-  background: #030517;
+  background: #040923;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: #FAFAFA;
