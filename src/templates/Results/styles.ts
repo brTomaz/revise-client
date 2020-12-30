@@ -4,10 +4,14 @@ import theme from 'styles/theme'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    min-height: 100vh;
-    padding: ${theme.spacings.xlarge} ${theme.spacings.xxhuge};
-    ${media.lessThan('medium')`
-      padding: ${theme.spacings.small};
+    padding: ${theme.spacings.small};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ${media.greaterThan('medium')`
+      padding: ${theme.spacings.medium} ${theme.spacings.xxhuge};
     `}
   `}
 `
@@ -16,7 +20,13 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: ${({ theme }) => theme.spacings.xxlarge};
+  padding: ${theme.spacings.small};
+  background-color: ${theme.colors.black};
+
+  ${media.greaterThan('medium')`
+    padding-left: ${theme.spacings.xxhuge};
+    padding-right: ${theme.spacings.xxhuge};
+  `}
 `
 
 export const Content = styled.div`
@@ -24,6 +34,8 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  min-width: 100%;
 
   ${media.greaterThan('large')`
     flex-direction: row;

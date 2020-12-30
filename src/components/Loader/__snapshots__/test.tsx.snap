@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> should render the Loader 1`] = `
+<div
+  aria-label="animation"
+  role="button"
+  style="width: 128px; height: 128px; overflow: hidden; margin: 0px auto; outline: none;"
+  tabindex="0"
+  title=""
+>
+  <svg
+    height="200"
+    preserveAspectRatio="xMidYMid meet"
+    style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+    viewBox="0 0 200 200"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <clippath
+        id="__lottie_element_2"
+      >
+        <rect
+          height="200"
+          width="200"
+          x="0"
+          y="0"
+        />
+      </clippath>
+    </defs>
+    <g
+      clip-path="url(#__lottie_element_2)"
+    >
+      <g
+        style="display: none;"
+      >
+        <g>
+          <path
+            fill-opacity="0"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+            stroke-miterlimit="4"
+          />
+        </g>
+      </g>
+      <g
+        style="display: none;"
+      >
+        <g>
+          <path
+            fill-opacity="0"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+            stroke-miterlimit="4"
+          />
+        </g>
+      </g>
+      <g
+        style="display: none;"
+      >
+        <g>
+          <path
+            fill-opacity="0"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+            stroke-miterlimit="4"
+          />
+        </g>
+      </g>
+      <g
+        opacity="1"
+        style="display: block;"
+        transform="matrix(2,0,0,2,100,100)"
+      >
+        <g
+          opacity="1"
+          transform="matrix(1,0,0,1,0,0)"
+        >
+          <path
+            d=" M0,-27 C0.11299999803304672,-27 0.22599999606609344,-26.999000549316406 0.33899998664855957,-26.99799919128418"
+            fill-opacity="0"
+            stroke="rgb(45,61,136)"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+            stroke-miterlimit="4"
+            stroke-opacity="1"
+            stroke-width="6"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`

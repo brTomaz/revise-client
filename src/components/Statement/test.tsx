@@ -14,7 +14,7 @@ describe('<Statement />', () => {
 
   it('should render the Statement with styles', () => {
     expect(statement).toHaveStyle({
-      color: theme.colors.darkGray,
+      color: theme.colors.black,
       'font-size': theme.font.sizes.large,
       'font-weight': theme.font.normal,
       padding: theme.spacings.xsmall

@@ -22,10 +22,11 @@ const shake = keyframes`
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
-    padding: ${theme.spacings.xlarge} ${theme.spacings.xxhuge};
-    ${media.lessThan('medium')`
-      padding: ${theme.spacings.small};
-    `}
+    padding: 0 ${theme.spacings.small} ${theme.spacings.small};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .wrong {
       color: ${theme.colors.error};
@@ -35,6 +36,12 @@ export const Wrapper = styled.div`
     .correct {
       color: ${theme.colors.secondary};
     }
+
+    ${media.greaterThan('medium')`
+      padding-left: ${theme.spacings.xxhuge};
+      padding-right:  ${theme.spacings.xxhuge};
+      padding-bottom: ${theme.spacings.xxlarge};
+    `}
   `}
 `
 export const Header = styled.div`
@@ -42,7 +49,20 @@ export const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: ${theme.spacings.xxlarge};
+    padding: ${theme.spacings.small};
+
+    ${media.greaterThan('medium')`
+      padding-left: ${theme.spacings.xxhuge};
+      padding-right: ${theme.spacings.xxhuge};
+    `}
+
     color: ${theme.colors.white};
+    background-color: ${theme.colors.black};
   `}
+`
+export const LoaderWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 `

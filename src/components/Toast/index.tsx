@@ -3,6 +3,7 @@ import Lottie from 'react-lottie'
 
 import animation from 'assets/correct-animation.json'
 import * as Styles from './styles'
+import theme from 'styles/theme'
 
 export type ToastProps = {
   points: number
@@ -16,11 +17,17 @@ const defaultOptions = {
 
 export const showToast = ({ points, attempt }: ToastProps) => {
   toast.success(
-    <div>
-      <Lottie options={defaultOptions} height={96} width={96} />
-      <Styles.Points>+{points}</Styles.Points>
-      <Styles.Attempt>Acertou na {attempt}ª tentativa.</Styles.Attempt>
-    </div>
+    <Styles.ToastSuccessWrapper>
+      <Lottie
+        options={defaultOptions}
+        height={theme.spacings.xhuge}
+        width={theme.spacings.xhuge}
+      />
+      <Styles.TextInfoWrapper>
+        <Styles.Points>Ganhou {points} pontos!</Styles.Points>
+        <Styles.Attempt>Você acertou na {attempt}ª tentativa.</Styles.Attempt>
+      </Styles.TextInfoWrapper>
+    </Styles.ToastSuccessWrapper>
   )
 }
 
