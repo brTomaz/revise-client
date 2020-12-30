@@ -1,4 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type AnimationProps = {
-  hidden: unknown
-  visible: unknown
+  hidden: any
+  visible: any
 }
