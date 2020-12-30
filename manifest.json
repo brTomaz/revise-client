@@ -1,0 +1,21 @@
+{
+  "name": "Revise App",
+  "short_name": "Revise",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "193x270"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x717"
+    }
+  ],
+  "background_color": "#FAFAFA",
+  "description": "An application to review concepts about entrance exams in Brazilian universities",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#FAFAFA"
+}
