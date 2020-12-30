@@ -27,6 +27,7 @@ exports[`<Question /> should render with statement and answers 1`] = `
 
 .c0 {
   margin-top: -3.6rem;
+  min-width: 100%;
   -webkit-animation: eyJzjA 2.3s ease-in-out;
   animation: eyJzjA 2.3s ease-in-out;
 }

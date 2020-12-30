@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
     `}
   `}
   margin-top: -3.6rem;
+  min-width: 100%;
   animation: ${bounceInUpAnimation} 2.3s ease-in-out;
 `
 
