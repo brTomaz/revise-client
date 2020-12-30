@@ -6,9 +6,12 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.small};
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     ${media.greaterThan('medium')`
       padding: ${theme.spacings.medium} ${theme.spacings.xxhuge};
-      padding-bottom: 0;
     `}
   `}
 `
@@ -31,6 +34,8 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  min-width: 100%;
 
   ${media.greaterThan('large')`
     flex-direction: row;
