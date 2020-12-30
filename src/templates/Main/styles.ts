@@ -1,8 +1,6 @@
 import styled, { css, keyframes } from 'styled-components'
 import media from 'styled-media-query'
 
-import theme from 'styles/theme'
-
 const shake = keyframes`
   10%, 90% {
     transform: translateX(-1px);
@@ -22,10 +20,14 @@ const shake = keyframes`
 `
 
 export const Wrapper = styled.div`
-  z-index: ${theme.layers.modal};
   ${({ theme }) => css`
     min-height: 100vh;
     padding: 0 ${theme.spacings.small} ${theme.spacings.small};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .wrong {
       color: ${theme.colors.error};
       animation: ${shake} 0.5s cubic-bezier(0.35, 0.05, 0.2, 0.99) both;
@@ -38,7 +40,7 @@ export const Wrapper = styled.div`
     ${media.greaterThan('medium')`
       padding-left: ${theme.spacings.xxhuge};
       padding-right:  ${theme.spacings.xxhuge};
-      padding-bottom: ${theme.spacings.xlarge};
+      padding-bottom: ${theme.spacings.xxlarge};
     `}
   `}
 `
