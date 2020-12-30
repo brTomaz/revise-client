@@ -6,7 +6,7 @@ import Logo from 'components/Logo'
 import Question from 'components/Question'
 
 import { TypeQuestion } from 'domain/entities/question'
-import { HandleAnswerClickType } from 'domain/functions/handle-answer-click-type'
+import { HandleAnswerClickType } from 'domain/function-types/handle-answer-click-type'
 import { useEffect, useState } from 'react'
 
 import {

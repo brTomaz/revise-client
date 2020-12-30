@@ -3,7 +3,7 @@ import { MouseEvent, useEffect } from 'react'
 import Answer from 'components/Answer'
 import Statement from 'components/Statement'
 import { TypeQuestion } from 'domain/entities/question'
-import { HandleAnswerClickType } from 'domain/functions/handle-answer-click-type'
+import { HandleAnswerClickType } from 'domain/function-types/handle-answer-click-type'
 import * as Styles from './styles'
 
 export type QuestionProps = Omit<TypeQuestion, 'id'> & {
