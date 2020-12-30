@@ -3,7 +3,7 @@
 exports[`<Bar /> should render Bar with styles 1`] = `
 .c0 {
   width: 100%;
-  height: 6.4rem;
+  height: 5.6rem;
   background: linear-gradient( 120deg,#2DC2C3 0%,#2D3D88 100% );
 }
 
