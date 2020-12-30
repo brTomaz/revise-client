@@ -24,7 +24,7 @@ export const showToast = ({ points, attempt }: ToastProps) => {
         width={theme.spacings.xhuge}
       />
       <Styles.TextInfoWrapper>
-        <Styles.Points>Ganhou {points} pontos!</Styles.Points>
+        <Styles.Points>Ganhou {points} ponto(s)!</Styles.Points>
         <Styles.Attempt>Você acertou na {attempt}ª tentativa.</Styles.Attempt>
       </Styles.TextInfoWrapper>
     </Styles.ToastSuccessWrapper>
