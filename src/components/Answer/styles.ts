@@ -5,7 +5,7 @@ export const Wrapper = styled.li`
   ${({ theme }) => css`
     cursor: pointer;
     list-style: none;
-    background: ${theme.colors.black};
+    background: ${theme.colors.mainBg};
     transition: all 0.5s ease-in-out;
     color: ${theme.colors.white};
     font-weight: ${theme.font.bold};

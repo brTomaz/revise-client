@@ -1,19 +1,8 @@
-import styled, { css, keyframes } from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 import { Wrapper as AnswerWrapper } from 'components/Answer/styles'
-
-const fadeInUpBig = keyframes`
-   from {
-    opacity: 0;
-    transform: translate3d(0, 2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`
+import { bounceInUpAnimation } from 'styles/animations'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -22,7 +11,9 @@ export const Wrapper = styled.div`
       padding: 0 ${theme.spacings.xxlarge};
     `}
   `}
-  animation: ${fadeInUpBig} 0.6s ease;
+  margin-top: -3.6rem;
+  min-width: 100%;
+  animation: ${bounceInUpAnimation} 2.3s ease-in-out;
 `
 
 export const InfoWrapper = styled.div`

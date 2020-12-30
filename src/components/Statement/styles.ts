@@ -5,7 +5,7 @@ import { StatementProps } from '.'
 
 export const Wrapper = styled.h2<StatementProps>`
   ${({ theme }) => css`
-    color: ${theme.colors.darkGray};
+    color: ${theme.colors.black};
     font-size: ${theme.font.sizes.large};
     font-weight: ${theme.font.normal};
     padding: ${theme.spacings.xsmall};

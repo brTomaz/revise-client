@@ -1,18 +1,20 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   text-align: center;
 `
 export const TopText = styled.h2`
-  font-size: ${({ theme }) => theme.font.sizes.xlarge};
-  font-weight: 400;
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xlarge};
+    font-weight: ${theme.font.normal};
+  `}
 `
 
 export const MainInfo = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xhuge};
-    font-weight: 100;
+    font-weight: ${theme.font.light};
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xxhuge};
     `}
@@ -21,7 +23,7 @@ export const MainInfo = styled.div`
 export const BottomText = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
-    font-weight: 300;
+    font-weight: ${theme.font.normal};
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.large};
     `}
